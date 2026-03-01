@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Xero Spending",
+    "slug": "xero-spending-management",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "xero-spending",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#13B5EA"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.unstablemind.xerospending"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#13B5EA",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.unstablemind.xerospending",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-web-browser"
+    ]
+  }
+}
