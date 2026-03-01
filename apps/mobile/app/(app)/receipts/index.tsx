@@ -11,9 +11,8 @@ import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { ReceiptCard } from "../../../components/ReceiptCard";
 import { useReceipts } from "../../../hooks/useTransactions";
-import type { ReceiptStatus } from "../../../types";
 
-const STATUS_TABS: Array<{ label: string; value: string | undefined }> = [
+const STATUS_TABS: { label: string; value: string | undefined }[] = [
   { label: "All", value: undefined },
   { label: "Scanned", value: "extracted" },
   { label: "Matched", value: "matched" },

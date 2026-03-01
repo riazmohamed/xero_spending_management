@@ -83,11 +83,11 @@ export interface StatementLine {
 export interface StatementLinesResponse {
   statementLines: StatementLine[];
   totalCount: number;
-  bankAccounts?: Array<{
+  bankAccounts?: {
     accountId: string;
     accountName: string;
     unreconciledCount: number;
-  }>;
+  }[];
 }
 
 export interface DashboardSummary {

@@ -8,7 +8,7 @@ import {
   Alert,
   FlatList,
 } from "react-native";
-import { useLocalSearchParams, useRouter } from "expo-router";
+import { useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 import { ReceiptPreview } from "../../../components/ReceiptPreview";
@@ -20,11 +20,10 @@ import {
   useUploadAttachment,
   useStatementLines,
 } from "../../../hooks/useTransactions";
-import type { Account, StatementLine } from "../../../types";
+import type { Account } from "../../../types";
 
 export default function TransactionDetailScreen() {
   const { id, type } = useLocalSearchParams<{ id: string; type?: string }>();
-  const router = useRouter();
   const [showAccountPicker, setShowAccountPicker] = useState(false);
 
   const isStatementLine = type === "statement";

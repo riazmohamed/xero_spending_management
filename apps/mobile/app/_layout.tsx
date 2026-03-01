@@ -22,7 +22,7 @@ export default function RootLayout() {
       }
     }
     init();
-  }, []);
+  }, [loadSession, setSession]);
 
   if (isLoading) {
     return null;

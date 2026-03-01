@@ -79,11 +79,12 @@ supabase/                            # Backend
 After editing mobile app files, run from `apps/mobile/`:
 
 ```bash
-npx tsc --noEmit                # TypeScript check — fix ALL errors
+npm run lint                    # ESLint — fix ALL errors and warnings
+npm run typecheck               # TypeScript check — fix ALL errors
 npx expo install --check        # Dependency compatibility check
 ```
 
-Fix ALL errors before continuing.
+Fix ALL errors and warnings before continuing. Use `/fix` to auto-detect and fix issues.
 
 ## Key Constraints
 
